@@ -11,7 +11,7 @@ class FormularioCadastro extends Component {
   handlerMudancaCategoria(evento) {
     evento.stopPropagation();
     this.categoria = evento.target.value;
-    console.log('handlerMudancaCategoria: ', this.categoria)
+    console.log("handlerMudancaCategoria: ", this.categoria);
   }
 
   handlerMudancaTitulo(evento) {
