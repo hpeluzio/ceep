@@ -15,10 +15,12 @@ export default class Notas {
   adicionarNota(titulo, texto, categoria) {
     const novaNota = new Nota(titulo, texto, categoria)
     this.notas.push(novaNota)
+    this.notificar()
   }
 
   deletarNota(index) {
     this.notas.splice(index,1)
+    this.notificar()
   }
 
 }
