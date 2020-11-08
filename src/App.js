@@ -71,12 +71,12 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro 
-          categorias={this.categorias.categorias}
+          categorias={this.categorias}
           criarNota={this.notas.adicionarNota} />
         <main className="conteudo-principal">
           <ListaDeCategorias
-            categorias={this.categorias.categorias}
-            adicionarCategoria={this.categorias.adicionarCategoria}
+            categorias={this.categorias}
+            adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)}
           />
           <ListaDeNotas
             deletarNota={this.notas.deletarNota}
